@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+span{
+    scrollbar-width: thin;
+}
+
+@media (max-width: 425px) {
+    table {
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+
+    .custom-container{
+        padding: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    table {
+        font-size: 12px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+}
+
+
+@layer components {
+    .myContainer {
+        @apply container px-40 py-16 mx-auto;
+    }
+}
